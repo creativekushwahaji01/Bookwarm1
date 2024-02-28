@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'react'
 import { ethers } from 'ethers'
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
 import Section from './components/Section'
 import Product from './components/Product'
 import ABI from './abis/Medicine.json'
 import config from './config.json'
 import logo from './assets/store/main_banner.png';
+import Footer from './components/Footer';
 
 function App() {
   const [account, setAccount] = useState(null);
@@ -93,6 +94,7 @@ function App() {
       {toggle && (
         <Product item={item} provider={provider} account={account} dappazon={dappazon} togglePop={togglePop} />
       )}
+      <Footer/>
     </div>
   );
 }

@@ -1,18 +1,13 @@
 <div align='center'>
-  <h1>Pharma Sync</h1>
-  <img src = "https://github.com/vaishnavi-3969/Web3Apps-PharmaSync/assets/69362333/23065980-0f41-48ac-b37c-b1cf0c5ced66" width="300px">
-  <h1>Tech Stack</h1>
-<p align="center">
-    <img src="https://skillicons.dev/icons?i=react,git,github,solidity,js,html,css," />
-</p>
+  <h1>Bookwarm</h1>
+
 </div>
 
-PharmaSync empowers healthcare accessibility with a decentralized e-pharmacy—seamlessly integrating emergency support, medication notifications, and doctor appointments for an inclusive health experience.
-
+Bookwarm is a decentralized e-commerce platform built on the Ethereum blockchain with Polygon (formerly Matic) for scalability. It allows users to buy and sell books using cryptocurrency in a secure and transparent manner.
 ## Features
 
 - **Medicine Sync**
-  - Empower your health choices with PharmaSync, a decentralized e-pharmacy portal.
+  - Empower your health choices with Bookwarm, a decentralized e-comerce portal.
 
 - **Emergency Point of Contact**
   - Access immediate assistance through our emergency point of contact service.
@@ -24,7 +19,7 @@ PharmaSync empowers healthcare accessibility with a decentralized e-pharmacy—s
   - Seamlessly book appointments with healthcare professionals using our intuitive form.
 
 - **Decentralized Platform**
-  - Built on Ethereum, PharmaSync eliminates intermediaries for peer-to-peer health transactions.
+  - Built on Ethereum, Bookwarm eliminates intermediaries for peer-to-peer health transactions.
 
 - **Secure Transactions with Crypto Wallets**
   - Ensure the safety of your health transactions using Web3 wallets.

@@ -19,19 +19,24 @@ const Product = ({ item, provider, account, dappazon, togglePop }) => {
     setOrder(order)
   }
   const buyHandler = async () => {
+    console.log("Buy button clicked");
     try {
-      const signer = await provider.getSigner()
-  
+      const signer = await provider.getSigner();
+      const overrides = {
+        gasLimit: ethers.BigNumber.from("5000000"), // Set a sufficient gas limit
+      };
+    
       // Buy item...
-      let transaction = await dappazon.connect(signer).buy(item.id, { value: item.cost })
-      await transaction.wait()
-  
-      setHasBought(true)
+      let transaction = await dappazon.connect(signer).buy(item.id, { value: item.cost, ...overrides });
+      await transaction.wait();
+    
+      setHasBought(true);
     } catch (error) {
       console.error('Error buying item:', error);
       // Handle error (e.g., display an error message to the user)
     }
   }
+  
   
   useEffect(() => {
     fetchDetails()
