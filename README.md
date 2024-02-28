@@ -6,14 +6,14 @@
 Bookwarm is a decentralized e-commerce platform built on the Ethereum blockchain with Polygon (formerly Matic) for scalability. It allows users to buy and sell books using cryptocurrency in a secure and transparent manner.
 ## Features
 
-- **Medicine Sync**
-  - Empower your health choices with Bookwarm, a decentralized e-comerce portal.
+- **book Sync**
+  - Empower your learning choices with Bookwarm, a decentralized e-comerce portal.
 
 - **Emergency Point of Contact**
   - Access immediate assistance through our emergency point of contact service.
 
 - **Notification System**
-  - Stay informed with our automated restocking notification system for your medicines.
+  - Stay informed with our automated restocking notification system for your books.
 
 - **Doctor Appointment Form**
   - Seamlessly book appointments with healthcare professionals using our intuitive form.
