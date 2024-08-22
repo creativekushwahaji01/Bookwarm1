@@ -5,7 +5,7 @@
       "name": "Tor Books The Echo Wife, by Sarah Gailey",
       "category": "bestseller",
       "image": "https://i.ibb.co/PMPhwdL/1646683506-41of2u-Zc-DFL-SL500.jpg",
-      "price": "5",
+      "price": 1,
       "rating": 4,
       "stock": 20
     },
@@ -14,7 +14,7 @@
       "name": "Del Rey Snow Crash, by Neal Stephenson",
       "category": "bestseller",
       "image": "https://i.ibb.co/RD7bjSX/1646683050-51nb-Yw-WXNu-L-SL500.jpg",
-      "price": "6",
+      "price": 1.2,
       "rating": 5,
       "stock": 6
     },
@@ -23,8 +23,8 @@
       "name": "Gallery Books Contact, by Carl Sagan",
       "category": "bestseller",
       "image": "https://i.ibb.co/4F3b4rV/1646683083-419-IIE0-Gh4-L-SL500.jpg",
-      "price": "4",
-      "rating": 3,
+      "price": "00.2",
+      "rating": 2,
       "stock": 24
     },
     {
@@ -32,7 +32,7 @@
       "name": "John Adams",
       "category": "history",
       "image": "https://i.ibb.co/rmCF49r/image.png",
-      "price": "7",
+      "price": "0.0002",
       "rating": 5,
       "stock": 10
     },
@@ -41,7 +41,7 @@
       "name": "1776",
       "category": "history",
       "image": "https://upload.wikimedia.org/wikipedia/en/5/5f/David_McCullough1776_book_cover.jpg",
-      "price": "6",
+      "price": "0.55",
       "rating": 4,
       "stock": 25
     },
@@ -50,7 +50,7 @@
       "name": "The Guns of August",
       "category": "history",
       "image": "https://i.ibb.co/m8mRQYz/The-Guns-Of-August.jpg",
-      "price": "10",
+      "price": "0.03",
       "rating": 5,
       "stock": 0
     },

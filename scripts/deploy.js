@@ -30,7 +30,7 @@ async function main() {
 
     await transaction.wait()
 
-    console.log(`Listed item ${items[i].id}: ${items[i].name}`)
+    console.log(`Listed item ${items[i].id}: ${items[i].name},${items[i].price},${items[i].stock}`)
   }
 }
 

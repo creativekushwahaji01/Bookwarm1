@@ -3,8 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@nomicfoundation/hardhat-ethers": "^2.0.6",
-
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -40,10 +38,8 @@
     ]
   },
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.7",
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
-    
-    "hardhat": "^2.12.2",
-    "@nomicfoundation/hardhat-ethers": "^2.0.6"
-
+    "hardhat": "^2.12.2"
   }
 }

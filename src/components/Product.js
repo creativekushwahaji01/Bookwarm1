@@ -20,22 +20,47 @@ const Product = ({ item, provider, account, dappazon, togglePop }) => {
   }
   const buyHandler = async () => {
     console.log("Buy button clicked");
+
     try {
-      const signer = await provider.getSigner();
-      const overrides = {
-        gasLimit: ethers.BigNumber.from("5000000"), // Set a sufficient gas limit
-      };
-    
-      // Buy item...
-      let transaction = await dappazon.connect(signer).buy(item.id, { value: item.cost, ...overrides });
-      await transaction.wait();
-    
-      setHasBought(true);
+        // Check if MetaMask is installed
+        if (!window.ethereum) {
+            alert("MetaMask is not installed. Please install it to use this feature.");
+            return;
+        }
+
+        // Request account access if needed
+        await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+        // Get the provider and signer from MetaMask
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+
+        // Set the gas limit and other transaction overrides
+        const overrides = {
+            gasLimit: ethers.BigNumber.from("5000000"), // Set a sufficient gas limit
+        };
+
+        // Buy item - this triggers MetaMask to prompt the user for confirmation
+        let transaction = await dappazon.connect(signer).buy(item.id, { value: item.cost, ...overrides });
+        console.log("Transaction initiated:", transaction);
+
+        // Wait for the transaction to be mined
+        await transaction.wait();
+
+        console.log("Transaction confirmed");
+        setHasBought(true);
     } catch (error) {
-      console.error('Error buying item:', error);
-      // Handle error (e.g., display an error message to the user)
+        console.error('Error buying item:', error);
+
+        // Handle specific errors, for example, if the user rejects the transaction
+        if (error.code === 4001) {
+            alert("Transaction rejected by the user.");
+        } else {
+            alert(`Transaction failed: ${error.message || 'Unknown error'}`);
+        }
     }
-  }
+};
+  
   
   
   useEffect(() => {
